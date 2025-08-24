@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2B Roadside LLC</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Header containing the sign image */
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main content area */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #C81D24;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        /* Services grid */
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 20px;
+            margin: 30px 0;
+        }
+
+        .service {
+            font-size: 1.1rem;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .service::before {
+            /* Use emoji icons as bullet points for each service */
+            position: absolute;
+            left: 0;
+            top: 2px;
+            content: attr(data-icon);
+        }
+
+        /* Contact section */
+        .contact {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.6rem;
+            color: #ffffff;
+            background-color: #C81D24;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 700px) {
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with the sign graphic -->
+    <header>
+        <img src="a2b_sign_final_combined.png" alt="A2B Roadside Sign">
+    </header>
+
+    <!-- Main content area with introduction and services -->
+    <main>
+        <h1>Welcome to A2B Roadside LLC</h1>
+        <p>
+            At <strong>A2B Roadside LLC</strong>, we’re committed to getting you back on the road quickly and safely. Whether you’re stranded, need fuel delivered, have a dead battery, a flat tire, or require light hauling and moving assistance, our friendly professionals are ready to help 24/7. We offer comprehensive roadside support so you don’t have to worry about being stuck.
+        </p>
+        <div class="services">
+            <div class="service" data-icon="🚗">Roadside Assistance</div>
+            <div class="service" data-icon="⛽">Fuel Delivery</div>
+            <div class="service" data-icon="🔋">Battery Jump/Replacement &amp; Lockout Services</div>
+            <div class="service" data-icon="🛞">Tire Delivery &amp; Changing</div>
+            <div class="service" data-icon="🚚">Local Hauling / Clean Out &amp; Moving Services</div>
+        </div>
+        <p>
+            Our mission is to provide quick response times, reliable service, and excellent customer care. With transparent pricing and skilled technicians, we ensure your peace of mind during stressful situations. Don’t hesitate—reach out to us today!
+        </p>
+        <div class="contact">
+            Call us now at <a href="tel:2158201348">(215) 820-1348</a>
+        </div>
+    </main>
+</body>
+</html>
